@@ -1,7 +1,10 @@
-/*! charger font calcul */
+/* ! charger font calcul */
 /*? charger font calcul */
 
-body {
+
+
+
+ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -41,4 +44,4 @@ button:hover {
 }
 .zero {
     flex: 2;
-}
+}  
