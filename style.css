@@ -1,47 +1,46 @@
 /* ! charger font calcul */
 /*? charger font calcul */
 
-
-
-
- body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 #app {
-    background-color: #3f51b4;
-    width: 430px;
-    height: 600px;
+  background-color: #3f51b4;
+  width: 430px;
+  height: 600px;
 }
 .row {
-    display: flex;
-    height: 100px;
+  display: flex;
+  height: 100px;
 }
-input[type="text"], button {
-    flex: 1;
-    border: none;
-    outline: none;
+input[type="text"],
+button {
+  flex: 1;
+  border: none;
+  outline: none;
 }
-input[type="text"]{
-    background-color: rgb(68, 68, 68);
-    color: aliceblue;
-    font-size: 2em;
-    padding: 0 20px;
+input[type="text"] {
+  background-color: rgb(68, 68, 68);
+  color: aliceblue;
+  font-size: 2em;
+  padding: 20px 20px;
 }
 button {
-    background-color: rgb(45, 39, 136);
-    color: aliceblue;
-    font-size: 1.2em;
+  background-color: rgb(45, 39, 136);
+  color: aliceblue;
+  font-size: 1.4em;
+  border: 1px solid black;
 }
 button:hover {
-    background-color: rgb(117, 117, 117);
-    cursor: pointer;
+  background-color: rgb(84, 104, 219);
+  cursor: pointer;
 }
 .zero {
-    flex: 2;
-}  
+  flex: 2;
+}
