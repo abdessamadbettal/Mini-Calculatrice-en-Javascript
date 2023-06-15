@@ -1,4 +1,5 @@
-// alert("js running");
+// * alert("js running");
+// TODO : rechercher sur readonly dans google
 //? ----------------- variables -------------//
 var queue = [];
 var input = 0;
@@ -32,7 +33,7 @@ function AddToQueue(input) {
 }
 
 // ! une fois cliquer sur les + , - , / , *
-function operation(arg) {
+function traiter(arg) {
   if (input !== 0 && input !== "-") {
     input = parseFloat(input);
     AddToQueue(input);
@@ -42,7 +43,7 @@ function operation(arg) {
     input = 0;
     console.log(`input lors de l'operation : ${input}`);
   }
-  if (arg == "-" && isNaN(queue[0]) && input !== "-") {
+  if (arg == "-" && isNaN(queue[0])) {
     input = "-";
     screen.value = "-";
   }
@@ -51,7 +52,7 @@ function operation(arg) {
 // ! une fois cluquer sur = va calculer le résultat
 function caculerScreen(resultat) {
   // * pour add input sur la queue
-  if (input !== 0 ) {
+  if (input !== 0) {
     input = parseFloat(input);
     AddToQueue(input);
     console.log(`input dans fonction calculer :   ${input}`);
@@ -61,7 +62,7 @@ function caculerScreen(resultat) {
   var Diviser_zero = true;
   for (var i = 2; i < resultat.length; i++) {
     switch (queue[i - 1]) {
-      case "+":
+      case "+ ":
         answer += resultat[i];
         console.log(`queue[i-1] boucle:   ${queue[i - 1]}`);
         console.log(`resultat[i] :   ${resultat[i]}`);
